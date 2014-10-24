@@ -4,4 +4,12 @@
   <artifactId>lucene-parent</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
+  
+  <modules>
+  	<module>../lucene-dao</module>
+  	<module>../lucene-services</module>
+  	<module>../lucene-util</module>
+  </modules>
+  
+  
 </project>
