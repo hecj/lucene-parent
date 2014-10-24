@@ -5,6 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   
+  <!-- 聚合子项目 统一管理 -->
   <modules>
   	<module>../lucene-dao</module>
   	<module>../lucene-services</module>
