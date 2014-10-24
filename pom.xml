@@ -1,31 +1,42 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.hecj.lucene</groupId>
-  <artifactId>lucene-parent</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  
-  <!-- 聚合子项目 统一管理 -->
-  <modules>
-  	<module>../lucene-dao</module>
-  	<module>../lucene-services</module>
-  	<module>../lucene-util</module>
-  </modules>
-  
-  <distributionManagement>   
-        <repository>   
-            <id>nexus-releases</id>   
-         <name>Nexus Release Repository</name>   
-       <!--  <url>http://192.168.1.105:8081/nexus/content/repositories/releases/</url>-->
-         <url>http://localhost:8081/nexus/content/repositories/releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>nexus-snapshots</id>
-            <name>Nexus Snapshot Repository</name>
-        <!--    <url>http://192.168.1.105:8081/nexus/content/repositories/snapshots/</url> -->
-             <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>   
-    </distributionManagement>   
-  
-  
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.hecj.lucene</groupId>
+	<artifactId>lucene-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<!-- 聚合子项目 统一管理 -->
+	<modules>
+		<module>../lucene-dao</module>
+		<module>../lucene-services</module>
+		<module>../lucene-util</module>
+		<module>../lucene-web</module>
+	</modules>
+	
+	<url>http://maven.apache.org</url>
+	
+	<distributionManagement>
+
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<name>Nexus Snapshot Repository</name>
+			<!-- <url>http://192.168.1.105:8081/nexus/content/repositories/snapshots/</url> -->
+			<url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+
+		<repository>
+			<id>nexus-releases</id>
+			<name>Nexus Release Repository</name>
+			<!-- <url>http://192.168.1.105:8081/nexus/content/repositories/releases/</url> -->
+			<url>http://localhost:8081/nexus/content/repositories/releases/</url>
+		</repository>
+
+	</distributionManagement>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<junit.version>4.10</junit.version>
+	</properties>
+
 </project>
