@@ -38,6 +38,21 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<junit.version>4.10</junit.version>
+		<struts2.version>2.3.16.3</struts2.version>
 	</properties>
-
+	
+	
+	<dependencyManagement>
+		<dependencies>
+			<!-- struts2 core -->
+			<dependency>
+				<groupId>org.apache.struts</groupId>
+				<artifactId>struts2-core</artifactId>
+				<version>${struts2.version}</version>
+			</dependency>
+			
+		</dependencies>
+	</dependencyManagement>	
+	
+	
 </project>
